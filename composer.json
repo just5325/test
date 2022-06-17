@@ -1,6 +1,6 @@
 {
-  "name": "hcg/test",
-  "description": "测试composer包",
+  "name": "hcg/wechat",
+  "description": "微信开发工具类",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -11,11 +11,15 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.0"
+    "php": ">=7.2",
+    "predis/predis": "2.0.x-dev",
+    "php-curl-class/php-curl-class": "dev-master",
+    "ext-redis": "*",
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
-      "Hcg\\": "src/"
+      "Hcg\\Wechat\\": "src/"
     }
   }
 }
